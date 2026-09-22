@@ -2,6 +2,8 @@
 
 **Investigate the web. Break things. Understand why.**
 
+[frontendschool.zenui.net](https://frontendschool.zenui.net)
+
 A fictional research institute with real engineering content. Twenty-two interactive
 experiments, five research dossiers, three case files and a myth archive covering browser
 rendering, CSS layout, the JavaScript event loop, React reconciliation, performance,

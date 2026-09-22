@@ -1,6 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { DOSSIERS, EXPERIMENTS, INSTITUTE_STATS, LABS, experimentOfTheDay } from "@/content";
+import { DOSSIERS, EXPERIMENTS, INSTITUTE_STATS } from "@/content";
 import { REPO, SITE } from "@/lib/site";
 import { GithubMark, InstituteMark, Wordmark } from "./logo";
 
@@ -47,9 +46,6 @@ const SOURCE_LINKS = [
 ] as const;
 
 export function Footer() {
-  const daily = experimentOfTheDay();
-  const operational = LABS.filter((lab) => lab.status === "OPERATIONAL").length;
-
   return (
     <footer className="border-line bg-ink-850 relative mt-28 border-t">
       <div className="mx-auto max-w-[1320px] px-4 py-16 sm:px-6">

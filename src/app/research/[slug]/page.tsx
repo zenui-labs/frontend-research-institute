@@ -125,7 +125,7 @@ export default async function DossierPage({ params }: PageProps<"/research/[slug
             ]}
           />
 
-          {dossier.sections.map((section, i) => (
+          {dossier.sections.map((section) => (
             <DocumentSection
               key={section.heading}
               id={sectionId(section.heading)}

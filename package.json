@@ -33,12 +33,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zenuinet/frontend-research-institute.git"
+    "url": "git+https://github.com/zenui-labs/frontend-research-institute.git"
   },
   "bugs": {
-    "url": "https://github.com/zenuinet/frontend-research-institute/issues"
+    "url": "https://github.com/zenui-labs/frontend-research-institute/issues"
   },
-  "homepage": "https://frontend-research-institute.vercel.app",
+  "homepage": "https://frontendschool.zenui.net",
   "keywords": [
     "frontend",
     "browser-internals",

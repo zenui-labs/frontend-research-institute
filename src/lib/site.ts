@@ -1,6 +1,6 @@
 /** Single source of truth for anything that ends up in a meta tag. */
 export const SITE = {
-  url: "https://frontend-research-institute.vercel.app",
+  url: "https://frontendschool.zenui.net",
   name: "Frontend Research Institute",
   shortName: "FRI",
   tagline: "Investigate the Web. Break Things. Understand Why.",
@@ -11,7 +11,7 @@ export const SITE = {
   creator: "ZenUI",
   creatorUrl: "https://zenui.net",
   /** Change these two if you fork the institute. */
-  repo: "https://github.com/zenuinet/frontend-research-institute",
+  repo: "https://github.com/zenui-labs/frontend-research-institute",
   license: "MIT",
 } as const;
 
