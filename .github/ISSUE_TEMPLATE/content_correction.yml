@@ -1,0 +1,33 @@
+name: Content correction
+description: A claim on the site is wrong, outdated, or missing a caveat
+title: "correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: The page, and the section or bench if you can narrow it
+      placeholder: /experiments/why-z-index-999999-loses, section "Why it happens"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim as written
+      description: Quote it
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Specification text, engine documentation, or a reproduction. Primary sources preferred.
+    validations:
+      required: true

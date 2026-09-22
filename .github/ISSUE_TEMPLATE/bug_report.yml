@@ -1,0 +1,43 @@
+name: Bug report
+description: Something on the site is broken
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      placeholder: /experiments/event-loop-investigation/lab
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: Firefox 143, macOS 15
+  - type: checkboxes
+    id: accessibility
+    attributes:
+      label: Does this affect
+      options:
+        - label: Keyboard navigation
+        - label: Screen reader output
+        - label: Reduced motion

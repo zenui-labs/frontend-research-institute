@@ -1,0 +1,50 @@
+name: Experiment proposal
+description: Propose a new experiment or bench
+title: "experiment: "
+labels: ["experiment"]
+body:
+  - type: input
+    id: question
+    attributes:
+      label: The question
+      description: One sentence, phrased as something a reader would actually wonder
+      placeholder: Why does a fast network still feel slow?
+    validations:
+      required: true
+  - type: dropdown
+    id: lab
+    attributes:
+      label: Laboratory
+      options:
+        - Browser
+        - CSS
+        - JavaScript
+        - React
+        - Performance
+        - Networking
+        - Security
+        - Accessibility
+        - Architecture
+        - Algorithms
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: The mechanism
+      description: What is actually going on underneath, and which specification or engine behaviour explains it
+    validations:
+      required: true
+  - type: textarea
+    id: instrument
+    attributes:
+      label: What the reader would manipulate
+      description: Which variables the bench exposes, and what they would observe changing
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+    validations:
+      required: true

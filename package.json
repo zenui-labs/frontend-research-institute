@@ -1,14 +1,18 @@
 {
   "name": "frontend-research-institute",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,css}\""
   },
   "dependencies": {
+    "lucide-react": "^1.47.0",
     "next": "16.3.5",
     "react": "19.2.8",
     "react-dom": "19.2.8"
@@ -20,7 +24,29 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
+    "prettier": "^3.9.8",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "A fictional research institute with real engineering content: interactive experiments on browser rendering, CSS layout, the event loop, React reconciliation, performance, networking, security and accessibility.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zenuinet/frontend-research-institute.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zenuinet/frontend-research-institute/issues"
+  },
+  "homepage": "https://frontend-research-institute.vercel.app",
+  "keywords": [
+    "frontend",
+    "browser-internals",
+    "web-performance",
+    "css",
+    "javascript",
+    "react",
+    "education",
+    "interactive"
+  ]
 }
